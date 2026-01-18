@@ -4,23 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tip Calculator</title>
+    <link rel="stylesheet" href="./vendors/index.css" />
+    <link rel="stylesheet" href="./pages/style.css" />
   </head>
   <body>
-    <h1>Tip Calculator</h1>
-    <p>Enter the bill amount and tip percentage to calculate the total.</p>
     <div class="page">
-      <form class="form" action="">
-        <label for="bill">
-          Bill Amount:
-          <input name="bill" type="text" />
-        </label>
-        <label for="tip">
-          Tip Percentage:
-          <input name="tip" type="text" />
-        </label>
-        <button>Calculate</button>
-        <div class="result"></div>
-      </form>
+      <div class="modal">
+        <h1 class="modal_title">Tip Calculator</h1>
+        <p class="modal_description">Enter the bill amount and tip percentage to calculate the total.</p>
+        <form class="form" action="">
+          <label class="form_label" for="bill">
+            Bill Amount:
+            <input class="form_input" name="bill" type="number" required/>
+          </label>
+          <label class="form_label" for="tip">
+            Tip Percentage:
+            <input class="form_input" name="tip" type="number" required/>
+          </label>
+          <button class="form_btn">CALCULATE</button>
+          <div class="form_total">
+            <p>Total: <span class="form_total-num"></span></p>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>
