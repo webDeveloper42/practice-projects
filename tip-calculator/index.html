@@ -12,14 +12,14 @@
       <div class="modal">
         <h1 class="modal_title">Tip Calculator</h1>
         <p class="modal_description">Enter the bill amount and tip percentage to calculate the total.</p>
-        <form class="form" action="">
-          <label class="form_label" for="bill">
+        <form class="form" action="submit">
+          <label class="form_label" name="bill">
             Bill Amount:
-            <input class="form_input" name="bill" type="number" required/>
+            <input id="num1" class="form_input" for="bill" type="number" required/>
           </label>
-          <label class="form_label" for="tip">
+          <label class="form_label" name="tip">
             Tip Percentage:
-            <input class="form_input" name="tip" type="number" required/>
+            <input id="num2" class="form_input" for="tip" type="number" required/>
           </label>
           <button class="form_btn">CALCULATE</button>
           <div class="form_total">
@@ -28,5 +28,6 @@
         </form>
       </div>
     </div>
+    <script type="module" src="./index.js" ></script>
   </body>
 </html>
