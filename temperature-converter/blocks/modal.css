@@ -1,0 +1,13 @@
+.modal{
+    width: 450px;
+    height: 250px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px #6d6d6d;
+    padding: 30px;
+    background: #beebd0;
+    color: #038c8c;
+    text-align: center;
+}

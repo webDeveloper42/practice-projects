@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature Converter</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./vendors/index.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <div class="page">
+        <div class="modal">
+            <h1 class="modal_title">Temperature Converter</h1>
+            <form action="submit" class="modal_form form">
+                <label name="celsius" class="form_label">
+                    Celsius:
+                    <input type="number" class="form_input" for="celsius">
+                </label>
+                <label for="fahrenheit" class="form_label">
+                    Fahrenheit:
+                    <input type="number" class="form_input" for="fahrenheit">
+                </label>
+                <label name="kelvin" class="form_label">
+                    Kelvin:
+                    <input type="number" class="form_input" for="kelvin">
+                </label>
+            </form>
+        </div>
+    </div>
     <script src="./index.js" type="module"></script>
 </body>
 </html>
