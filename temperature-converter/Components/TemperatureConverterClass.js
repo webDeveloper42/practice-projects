@@ -1,5 +1,5 @@
 import { convertTemp } from "../utils/utils.js";
-class TemperatureConverter {
+export class TemperatureConverter {
     constructor(form, inputData, outputData){
         this.form = form;
         this.inputData = inputData;
