@@ -1,14 +1,13 @@
-import { convertTemp } from "../utils/utils.js";
+import { renderTemps } from "../utils/utils.js";
 export class TemperatureConverter {
-    constructor(form, inputData, outputData){
+    constructor(form, inputData){
         this.form = form;
         this.inputData = inputData;
-        this.outputData = outputData;
     }
-    submitHandler(){
+    initialize(){
         this.form.addEventListener('submit', (event) => {
             event.preventDefault();
-            convertTemp();
+            renderTemps(this.inputData);
         })
     }
 }
