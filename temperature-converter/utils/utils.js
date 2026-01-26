@@ -18,7 +18,7 @@ function celsiusExist(fahrenheitInput, kelvinInput, existedInputValue){
     let toFahrenheit = (existedInputValue * 9/5) + 32 ;
     fahrenheitInput.value = toFahrenheit.toFixed(2);
     let toKelvin = existedInputValue + 273.15;
-    kelvinInput.value = toKelvin.toFixed(2);
+    kelvinInput.value = toKelvin;
 }
 function fahrenheitExist(celsiusInput, kelvinInput, existedInputValue){
     let toCelsius = (existedInputValue - 32) * 5/9 ;
